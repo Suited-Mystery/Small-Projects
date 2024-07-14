@@ -9,6 +9,7 @@ def addition():
     print(result)
     history.append(result)
 
+
 def subtraction():
     print("Please enter 2 numbers to subtract:")
     a = int(input("a = "))
@@ -68,7 +69,8 @@ def main():
         elif choice == "5":
             exponentiation()
         elif choice == "6":
-            print(history)
+            for operation in history:
+                print(operation)
         elif choice == "7":
             break
         else:
